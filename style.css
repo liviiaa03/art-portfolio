@@ -1,0 +1,168 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;  /* Applying Inter font */
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    background-image: url('images/header-bg.jpeg');  /* Set the background image */
+    background-size: cover;  /* Make sure the image covers the entire header */
+    background-position: center center;  /* Center the image */
+    color: white;
+    padding: 20px;
+    text-align: left;
+    height: 200px;  /* Set a fixed height for the header (adjust as needed) */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Section */
+section {
+    max-width: 1000px;  /* Limit max width */
+    margin: 0 auto;  /* Center the section */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;  /* Light gray background */
+}
+
+#about p {
+    margin-bottom: 20px;  /* Adjust space between paragraphs */
+}
+
+/* Gallery Section */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;  /* Add space below gallery */
+}
+
+#gallery h2,
+#gallery p {
+    width: 100%;  /* Full width */
+    text-align: center;
+    margin-bottom: 20px;  /* Add space below text */
+}
+
+.artwork {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;  /* Adjust space between artwork */
+}
+
+.artwork img {
+    display: block;
+    width: 100%;
+    max-width: 300px;  /* Limit image width */
+    height: auto;  /* Maintain aspect ratio */
+    margin: 0 auto;  /* Center images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    transition: transform 0.3s ease;  /* Smooth zoom effect */
+}
+
+/* Zoom effect on hover */
+.artwork img:hover {
+    transform: scale(1.08);  /* Zoom effect on hover */
+}
+
+/* Image Details on Hover */
+.details {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    color: white;  /* Text color */
+    text-align: center;
+    padding: 0px;
+    opacity: 0;  /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;  /* Smooth fade-in */
+}
+
+/* Show details on hover */
+.artwork:hover .details {
+    opacity: 0.6;  /* Make the details visible on hover */
+}
+
+
+/* Gallery Section Styling */
+#archive {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#archive h2,
+#archive p {
+    width: 100%;  /* Full width */
+    text-align: center;
+    margin-bottom: 20px;  /* Add space below text */
+}
+
+.gallery {
+    display: block;
+   
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;  /* Optional: Add zoom effect */
+}
+
+.artwork:hover img {
+    transform: scale(1.05);  /* Optional: Zoom effect on hover */
+}
+
+.details {
+    display: none;  /* Hide details initially */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.artwork:hover .details {
+    display: block;  /* Show details when artwork is hovered */
+}
